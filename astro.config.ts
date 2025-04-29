@@ -13,6 +13,7 @@ export default defineConfig({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
     }),
   ],
+
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
     shikiConfig: {
@@ -27,7 +28,8 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
-  image: {
+
+/*  image: {
     // Used for all Markdown images; not configurable per-image
     // Used for all `<Image />` and `<Picture />` components unless overridden with a prop
     experimentalLayout: "responsive",
@@ -37,4 +39,5 @@ export default defineConfig({
     responsiveImages: true,
     preserveScriptOrder: true,
   },
+*/
 });

@@ -5,7 +5,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+    "types": [
+        "@cloudflare/workers-types/2023-07-01"
+    ],
+
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
